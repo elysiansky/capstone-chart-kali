@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "capstone-chart-vulnerable-kali.fullname" . }}
+  name: {{ include "capstone-chart-kali.fullname" . }}
   labels:
-    {{- include "capstone-chart-vulnerable-kali.labels" . | nindent 4 }}
+    {{- include "capstone-chart-kali.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "capstone-chart-vulnerable-kali.selectorLabels" . | nindent 4 }}
+    {{- include "capstone-chart-kali.selectorLabels" . | nindent 4 }}
