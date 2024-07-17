@@ -7,7 +7,7 @@ kali:
   replicas: 2
   image:
     repository: elysiansky/capstone-kali
-    tag: 58706a6-amd64
+    tag: de3488d-amd64
   service:
     type: ClusterIP
   resources:
