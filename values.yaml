@@ -3,9 +3,23 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
+kali:
+  replicas: 2
+  image:
+    repository: elysiansky/capstone-kali
+    tag: b2444b8-amd64
+  service:
+    type: ClusterIP
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
 
 image:
-  repository: nginx
+  repository: capstone-kali
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: a88ceef-amd64
