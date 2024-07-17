@@ -8,7 +8,7 @@ image:
   repository: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: elysiansky/my-kali-image:
+  tag: 30d31f1-amd64
 
 imagePullSecrets: []
 nameOverride: ""
