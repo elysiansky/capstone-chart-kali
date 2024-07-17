@@ -18,12 +18,6 @@ kali:
       cpu: 100m
       memory: 128Mi
 
-image:
-  repository: capstone-kali
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: a88ceef-amd64
-
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
