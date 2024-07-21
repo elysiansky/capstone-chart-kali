@@ -22,10 +22,3 @@ spec:
         env:
         - name: ENVIRONMENT
           value: "{{ .Values.env }}"
-        volumeMounts:
-        - name: config-volume
-          mountPath: /etc/config
-      volumes:
-      - name: config-volume
-        configMap:
-          name: capstone-kali-config
