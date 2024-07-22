@@ -7,7 +7,7 @@ image:
   repository: elysiansky/capstone-kali
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 525f497-amd64
+  tag: 97a349b-amd64
 
 imagePullSecrets: []
 nameOverride: ""
